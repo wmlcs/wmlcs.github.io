@@ -72,13 +72,14 @@ All rights reserved.
             <div class="title"><span class="num">1 </span><span class="title_dcpt">關於我</span><span
                     class="sect_line"></span>
             </div>
-            <p class="content">我叫賴威鳴，目前就讀資訊管理學系，<strong>雙主修</strong>資訊工程學系，預計於2028年取得商學、工學雙學士（B. B. A. 及B. S.
-                ）。關注人工智慧、機器學習、軟體工程與半導體領域，未來期望朝智慧製造領域邁進。</p>
-            <div class="noteinfo">
-                <div class="notetitle">Definition. </div>
-                <div class="notecontent">我的求職定位：<b>軟體工程師（Software
-                        Engineer）</b>、<b>智慧製造系統工程師（Intelligent Manufacturing Engineer）</b>。</div>
-            </div>
+            <article>
+                <p class="content">我叫賴威鳴，目前就讀資訊管理學系，<strong>雙主修</strong>資訊工程學系，預計於2028年取得商學、工學雙學士（B. B. A. 及B. S.
+                    ）。關注人工智慧、機器學習、軟體工程與半導體領域，未來期望朝智慧製造領域邁進。</p>
+                <div class="noteinfo">
+                    <div class="notecontent">我的求職定位：<b>軟體工程師（Software
+                            Engineer）</b>、<b>智慧製造系統工程師（Intelligent Manufacturing Engineer）</b>。</div>
+                </div>
+            </article>
         </section>
         <!--Education-->
         <section id="education">
@@ -136,24 +137,33 @@ All rights reserved.
                         <th scope="row">Python程式設計</th>
                         <td scope="row">94</td>
                         <td scope="row">2</td>
-                        <td scope="row"><progress id="pr" max="74" value="72"></progress></td>
+                        <td scope="row"><progress id="pr" max="74" value="72"></progress>PR95+</td>
                     </tr>
                     <tr>
                         <th scope="row">Java程式設計</th>
                         <td scope="row">99</td>
                         <td scope="row">1</td>
-                        <td scope="row"><progress id="pr" max="66" value="65"></progress></td>
+                        <td scope="row"><progress id="pr" max="66" value="65"></progress>PR98+</td>
                     </tr>
                 </tbody>
             </table>
             <!--Tab2-->
             <div class="items">
                 <div class="era">大一上學期</div>
-                <div class="expinfo">中原大學專業學科優異獎</div>
+                <div class="einfo">中原大學專業學科優異獎</div>
             </div>
             <div class="items">
                 <div class="era">大一下學期</div>
-                <div class="expinfo">中原大學專業學科優異獎</div>
+                <div class="einfo">中原大學專業學科優異獎</div>
+            </div>
+            <button onclick="openModal()">獲獎照片</button>
+
+            <div class="popback" id="popback">
+                <div class="popbody">
+                    <img src="./image/certofpy.jpg" style="width: 200px;" /><br>中原大學專業學科優異獎(Python程式設計)<br>
+                    <img src="./image/certofjava.jpg" style="width: 200px;" /><br>中原大學專業學科優異獎(Java程式設計)<br>
+                    <button onclick="closeModal()">關閉</button>
+                </div>
             </div>
         </section>
         <!--Portfolio-->
@@ -175,7 +185,7 @@ All rights reserved.
         </section>
         <div class="beforef"></div>
         <footer>
-            <code>Latest Update: 2025-11-01</code><br><br>
+            <code>Last Updated: 2025-11-13</code><br><br>
             Copyright © <span id="current_y"></span> <a href="mailto:wmlai.cs@gmail.com">Wei-Ming, Lai</a>. All
             Rights
             Reserved.
@@ -183,7 +193,13 @@ All rights reserved.
     </div>
     <script>
         const dy = new Date().getFullYear();
-        document.getElementById("current_y").textContent = dy>2025?`2025 - ${current_y}`:"2025";
+        document.getElementById("current_y").textContent = dy > 2025 ? `2025 - ${current_y}` : "2025";
+        function openModal() {
+            document.getElementById('popback').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('popback').style.display = 'none';
+        }
     </script>
 </body>
 
