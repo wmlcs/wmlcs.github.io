@@ -32,19 +32,17 @@ All rights reserved.
 
 */
 
-* {
-  user-select: none;
-}
-
 blockquote {
   font-family: "Brush Script MT", "Lucida Handwriting", "Segoe Script", cursive;
   font-size: large;
 }
+
 .page {
   max-width: 860px;
   margin: 56px auto 0;
   padding: 0 28px;
 }
+
 header {
   border-bottom: 1px solid #c9c9c9;
   padding-bottom: 18px;
@@ -204,12 +202,14 @@ section {
   margin: 30px 0 26px;
 }
 
-tr, th, td {
+tr,
+th,
+td {
   border: 1px solid black;
-  
+
 }
 
-thead{
+thead {
   background-color: #ddd;
   border-bottom: 1px solid black;
 }
@@ -230,7 +230,7 @@ thead{
   background: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   max-width: 300px;
   text-align: center;
 }
@@ -252,4 +252,40 @@ button:hover {
   padding: 10px;
   font-size: 15px;
   cursor: pointer;
+}
+
+.bm {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headp {
+    display: block;
+  }
+
+  .pfp {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+  }
+  .bm {
+    display: block;
+  }
+  .bm::before {
+    border-bottom: 1px solid #c9c9c9;
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+    content: "";
+    display: block;
+  }
+  footer {
+    white-space: nowrap;
+  }
 }
