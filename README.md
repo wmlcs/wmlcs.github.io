@@ -3,11 +3,13 @@
 # Live demo
 https://wmlcs.github.io/
 # 網站架構
+```
 project/
 │── index.html # 主頁面
 │── style.css # 網站樣式
 │── image/ # 大頭照與獎狀圖片
 │── README.md # 本文件
+```
 # RWD自適應網頁設計
 本網頁為滿足行動裝置使用者需求，使用RWD設計，主特色如下：
 1. 導覽列（navbar）變成 縱向排列
