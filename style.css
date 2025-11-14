@@ -46,7 +46,7 @@ blockquote {
 header {
   border-bottom: 1px solid #c9c9c9;
   padding-bottom: 18px;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 
 .headp {
@@ -129,18 +129,19 @@ a.mail:hover {
   text-decoration: underline;
 }
 
+body {
+  display: flex;
+}
+
 nav a {
   color: #2894FF;
   margin: 0 16px;
   text-decoration: none;
+  display: block;
 }
 
 nav a:hover {
   text-decoration: underline;
-}
-
-.navbar {
-  margin-bottom: 10px;
 }
 
 .about p {
@@ -195,11 +196,16 @@ thead th {
 }
 
 footer {
+  clear: both;
   text-align: center;
 }
 
 section {
   margin: 30px 0 26px;
+}
+
+.about section {
+  margin: 0px 0 26px 0;
 }
 
 tr,
@@ -258,14 +264,96 @@ button:hover {
   display: none;
 }
 
+aside {
+  float: right;
+  width: 20%;
+  border: dotted 1px #c9c9c9;
+  margin: 30px 10px 10px 10px;
+  padding: 5px 5px 10px 5px;
+  align-items: center;
+}
+
+.social-btn-group {
+  margin: 0 16px;
+  display: block;
+}
+
+nav a {
+  padding: 5px;
+}
+
+.contents {
+  float: left;
+  width: 75%;
+}
+
+.beforef {
+  clear: both;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  text-decoration: none;
+}
+
+#wmcs {
+  background: rgba(173, 181, 189, 0.7);
+  color: #333;
+  height: 40px;
+  text-align: center;
+}
+
+#mymail {
+  background: rgba(206, 212, 218, 0.7);
+  color: #333;
+  height: 40px;
+  text-align: center;
+}
+
+#mygithub {
+  background: rgba(222, 226, 230, 0.7);
+  color: #333;
+  height: 40px;
+  text-align: center;
+}
+
+
 @media screen and (max-width: 600px) {
   nav {
-    display: flex;
+    display: block;
     flex-direction: column;
+  }
+
+  body {
+    display: block !important;
+  }
+
+  header {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  aside {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0 auto 3px;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid #c9c9c9;
+  }
+
+  .contents {
+    float: none;
+    width: 100%;
   }
 
   .headp {
     display: block;
+    padding: 20px 20px 0 20px;
   }
 
   .pfp {
@@ -275,9 +363,11 @@ button:hover {
     object-fit: cover;
     border: 3px solid #ccc;
   }
+
   .bm {
     display: block;
   }
+
   .bm::before {
     border-bottom: 1px solid #c9c9c9;
     padding-bottom: 18px;
