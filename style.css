@@ -269,7 +269,7 @@ aside {
   width: 20%;
   border: dotted 1px #c9c9c9;
   margin: 30px 10px 10px 10px;
-  padding: 5px 5px;
+  padding: 5px 5px 10px 5px;
   align-items: center;
 }
 
@@ -300,21 +300,21 @@ nav a {
 }
 
 #wmcs {
-  background: rgba(144, 241, 239, 0.7);
+  background: rgba(173, 181, 189, 0.7);
   color: #333;
   height: 40px;
   text-align: center;
 }
 
 #mymail {
-  background: rgba(255, 239, 159, 0.7);
+  background: rgba(206, 212, 218, 0.7);
   color: #333;
   height: 40px;
   text-align: center;
 }
 
 #mygithub {
-  background: rgba(123, 241, 168, 0.7);
+  background: rgba(222, 226, 230, 0.7);
   color: #333;
   height: 40px;
   text-align: center;
