@@ -285,7 +285,4 @@ button:hover {
     content: "";
     display: block;
   }
-  footer {
-    white-space: nowrap;
-  }
 }
